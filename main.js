@@ -48,10 +48,11 @@ generateButton.addEventListener('click', function() {
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);  // Redraw the image
 
   // Add the text over the image
-  ctx.font = 'bold 20pt Trebuchet MS';
+  ctx.font = 'bold 17pt Trebuchet MS';
   ctx.fillStyle = 'black';
   ctx.fillText(getRandomFourDigitNumber(), 180, 1050);  // Adjust position as needed
-  ctx.fillText(getFormattedDate(), 120, 1230);
+  ctx.font = 'bold 18pt Trebuchet MS';
+  ctx.fillText(getFormattedDate(), 25, 1160);
 
 });
 
