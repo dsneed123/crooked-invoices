@@ -24,9 +24,9 @@ html, body {
   /* Style the button */
 button {
     padding: 10px 20px;
-    font-size: 18px;
-    background-color: #4CAF50;
-    color: white;
+    font-size: 40pt;
+    background-color: transparent;
+    color: black;
     border: none;
     border-radius: 5px;
     position: relative;
@@ -34,9 +34,6 @@ button {
     margin-top: 3px;
   }
   
-button:hover {
-    background-color: #45a049;
-  }
 .canvas-container{
   height : 100%;
   width: 100%;
@@ -44,6 +41,7 @@ button:hover {
   border-radius: 12px;
   background-color: white;
   margin : 10px;
+  padding-left: 5%;
   
 }
 
