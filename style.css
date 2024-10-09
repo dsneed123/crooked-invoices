@@ -39,18 +39,20 @@ button:hover {
   }
 .canvas-container{
   height : 100%;
-  width: 100%;
+  width: 80vw;
    /* border: 10px solid gray;*/
   border-radius: 12px;
   background-color: white;
   margin : 10px;
+  display: flex;
+  justify-content: center;
   
 }
 
 .instructions{
  /* border: 10px solid gray;*/
   border-radius: 12px;
-  width : 100%;
+  width : 80vw;
   background-color: white;
   margin-top: 10px;
   display: flex;
