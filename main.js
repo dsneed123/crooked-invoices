@@ -11,6 +11,20 @@ image.onload = function() {
   console.log('Image loaded');
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 };
+
+window.onload = function(){
+  
+  // Clear the canvas and redraw the image
+  ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear the canvas
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);  // Redraw the image
+
+  // Add the text over the image
+  ctx.font = 'bold 17pt Trebuchet MS';
+  ctx.fillStyle = 'black';
+  ctx.fillText(getRandomFourDigitNumber(), 180, 1050);  // Adjust position as needed
+  ctx.font = 'bold 18pt Trebuchet MS';
+  ctx.fillText(getFormattedDate(), 25, 1160);
+}
 function getFormattedDate() {
   const date = new Date();
 
@@ -38,23 +52,6 @@ function getFormattedDate() {
 function getRandomFourDigitNumber() {
   return Math.floor(1000 + Math.random() * 9000);  // Generates a number between 1000 and 9999
 }
-
-// Add text to the image when the button is clicked
-generateButton.addEventListener('click', function() {
-  
-
-  // Clear the canvas and redraw the image
-  ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear the canvas
-  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);  // Redraw the image
-
-  // Add the text over the image
-  ctx.font = 'bold 17pt Trebuchet MS';
-  ctx.fillStyle = 'black';
-  ctx.fillText(getRandomFourDigitNumber(), 180, 1050);  // Adjust position as needed
-  ctx.font = 'bold 18pt Trebuchet MS';
-  ctx.fillText(getFormattedDate(), 25, 1160);
-
-});
 
 // Download the edited image
 downloadButton.addEventListener('click', function() {
