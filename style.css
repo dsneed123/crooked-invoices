@@ -1,0 +1,312 @@
+
+html, body {
+   
+    margin: 10px;
+    width : 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  .content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style the button */
+#submit {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00ff08;
+    color: white;
+    font-size: 15pt;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    
+    margin-top: 5px;
+  }
+  
+button:hover {
+    background-color: #45a049;
+  }
+
+
+.instructions{
+ /* border: 10px solid gray;*/
+  border-radius: 12px;
+  width : 80vw;
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.instructions > h3{
+  font-size: 25pt;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: 15pt;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.Password-container{
+
+  margin : 10px;
+}
+.top-nav-bar {
+  display: flex;
+  align-items: center;  /* Center items vertically */
+  color: rgb(108, 108, 108);
+  width: 80%;
+  position: relative;   /* Allows absolute positioning of the back arrow */
+}
+
+#back {
+  font-size: 30pt;
+  margin-right: 20px;  /* Adds some space between the arrow and the title */
+}
+
+.top-nav-bar > p.title {
+  font-size: 20pt;
+  margin: 0;           /* Removes default margins */
+  flex-grow: 1;        /* Allows title to take available space */
+  text-align: center;  /* Centers text */
+}
+.venmo-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.venmo-header > * {
+  margin-top: 5px;
+}
+
+.venmo-title{
+  font-style: bold;
+  font-size: 20pt;
+  
+}
+.venmo-amount{
+  color: red;
+  font-size: 25pt;
+}
+.venmo-icon {
+  width: 100px;               /* Width of the circle */
+  height: 100px;              /* Height of the circle */
+  background-color: rgb(252, 251, 251); /* Circle color */
+  border-radius: 50%;         /* Creates the circle */
+  border: 2px solid rgb(200, 200, 200);     /* Optional: border around the circle */
+  display: flex;              /* Use Flexbox for centering */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+}
+
+.icon-letter {
+  font-size: 36pt;            /* Size of the letter */
+  color: rgb(123, 123, 123);               /* Color of the letter */
+  margin: 0;                  /* Remove default margins */
+}
+.social-activity {
+    
+  width:90%;           /* Use Flexbox for layout */
+  align-items: center;
+  justify-content: left; 
+}
+.social-activity > p{
+  margin-bottom: 0;
+}
+
+.icon-container {
+  display: flex;               /* Use Flexbox for icons and counts */
+  align-items: center;         /* Center items vertically */
+  margin-left: 10px;   
+  margin-top: 0px;       /* Space between the title and icons */
+}
+
+.heart {
+  width: 24px;                 /* Set a fixed width for the icons */
+  height: 24px;                /* Set a fixed height for the icons */
+  margin-right: 10px;           /* Space between icon and count */
+}
+.message {
+  width: 30px;                 /* Set a fixed width for the icons */
+  height: 30px;                /* Set a fixed height for the icons */
+  margin-right: 10px;           /* Space between icon and count */
+}
+.icon-container > p{
+  margin-right: 10px;     
+}
+.share-business{
+  background-color: rgb(240, 240, 240);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+ 
+
+}
+.share-info > p{
+  font-size: 25pt;
+}
+#share{
+  width: 80px;                 /* Set a fixed width for the icons */
+  height: 80px;                /* Set a fixed height for the icons */
+  margin-right: 10px;   
+}
+#blue-text{
+  color: blue;
+}
+#line{
+  border-bottom: 1px solid rgb(202, 201, 201);
+  width: 90%;
+  margin-top: 3%;
+}
+#payment-status{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+#status{
+  font-size: 15pt;
+  margin-bottom: 1%;
+}
+#complete{
+  margin-top: 1%;
+  font-size: 20pt;
+}
+#payment-method {
+  width: 90%;
+  justify-content: left;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#bank-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+#payment-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;  /* Adds space between the image and text */
+}
+#user-bank{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#user-account{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#bank-img {
+  width: 50px;    /* Adjust width as needed */
+  height: auto;   /* Maintain aspect ratio */
+}
+
+#bank{
+  color: black;
+}
+#date{
+  font-size: 20pt;
+  font-style: bold;
+}
+.bottom{
+  width:90%;
+}
+#learn-more{
+  color: blue;
+  font-size: 20pt;
+}
+.learn-more-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#verify{
+  width: 50px;                 /* Set a fixed width for the icons */
+  height: 50px;                /* Set a fixed height for the icons */
+  margin-right: 10px;
+}
+.transaction-type{
+  align-items: left;
+  width: 90%;
+  
+}
+.transaction-id-container{
+  align-items: left;
+  width: 90%;
+}
+.date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#lock{
+  width: 50px;                 /* Set a fixed width for the icons */
+  height: 50px;                /* Set a fixed height for the icons */
+  margin-right: 10px;
+}
+#transaction-id{
+  font-size: 20pt;
+}
+#transaction-id-label{
+  font-size: 18pt;
+}
+#need-help{
+  color: blue;
+  font-size: 20pt;
+}
+.Password-container{
+  width:100%;
+  height: 100vh;
+  align-items: center;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: lime;
+}
+#password{
+  width: 40%;
+  height: 40px;
+  font-size: 25pt;
+}
+.warn{
+  width:100%;
+}
+.password-box{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+#warning{
+  width: 60%;
+  font-size: 40pt;
+}

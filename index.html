@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>Venmo Receipt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  
+  <div class="Password-container" style="visibility: visible;">
+
+    <p id="warning"><strong>Enter the key. Contact the owner for the key. If you do not know the owner, you do not belong here.</strong></p>
+
+    <div class="password-box">
+     
+      <input type="password" id="password" name="password" placeholder="Key" required>
+      
+      <div>
+        <button id="submit" type="button" onclick="comparePasswords()">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div class="content-container" style="visibility: hidden;">
+    <div class="top-nav-bar">
+      <p id="back">‹</p>
+      <p class="title">Payment details</p>
+    </div>
+    <div class="venmo-header">
+      <div class="venmo-icon">
+        <p class="icon-letter">B</p>
+      </div>
+      <p class="venmo-title"><strong>Borracho</strong></p>
+      <p class="venmo-message">"💸 to Borracho"</p>
+      <p class="venmo-amount">-$10</p>
+    </div>
+    <div class="social-activity">
+      <p>Social Activity</p>
+      <div class="icon-container">
+        <img class="heart" src="Icons/heart.png" alt="Heart">
+        <p>0</p>
+        <img class="message" src="Icons/message.png" alt="Message">
+        <p>0</p>
+      </div>
+    </div>
+    <div class="share-business">
+      <img id="share" src="Icons/share.png" alt="Share">
+      <div class="share-info">
+        <p><strong>Like this business?</strong></p>
+        <p>Spread the world to friends and family.you think will like it, too.</p>
+        <p id="blue-text"><strong>Share Profile</strong></p>
+      </div>
+    </div>
+    <div id="line"></div>
+    <div id="payment-status">
+      <p id="status">Status</p>
+      <p id="Complete"><strong>Complete</strong></p>
+    </div>
+    <div id="payment-method">
+      <p>Payment Method</p>
+      <div class="payment-container">
+        <div id="bank-info">
+          <img id = "bank-img" src="Icons/bank.png" alt="bank">
+          <div id="payment-info">
+            <p id="user-bank"><strong>BANK OF AMERICA, N.A.</strong></p>
+            <p id="user-account"><strong>Personal Checkings</strong></p>
+            <p id="bank"><strong>Bank •• </strong></p>
+          </div>
+        </div>
+      </div>
+      <div id="transaction-details">
+        <p><strong>Transaction details</strong></p>
+        <div class="date">
+          <p id="date"><strong></strong></p>
+          <img id = "lock" src="Icons/lock.png" alt="Lock">
+          <p id="learn-more"><strong>Private</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom" >
+      <p><strong>Paid to</strong></p>
+      <p><strong>@BorrachoTacosandTequilaria</strong></p>
+      <p>You paid for goods or services. You can get a full refund if an eligable purchase isn't what you paid for.</p>
+      <div class="learn-more-container"> 
+        <img id="verify" src="Icons/verify.png" alt="verify">
+        <p id ="learn-more"><strong>Learn more about Purchase Protection</strong></p>
+      </div>
+     
+    </div>
+    <div class="transaction-type">
+      <p>Type of transaction</p>
+      <p><strong>Purchase</strong></p>
+    </div>
+    <div class="transaction-id-container">
+      <p id="transaction-id-label">Transaction ID</p>
+      <p id="transaction-id"><strong></strong></p>
+      <p id="need-help"><strong>Need Help?</strong></p>
+    </div>
+    
+
+</div>
+
+
+
+</body>
+</html>
