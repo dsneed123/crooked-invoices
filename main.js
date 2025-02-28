@@ -6,18 +6,29 @@ document.addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const venmoMessage = document.querySelector('.venmo-message');
   const venmoAmount = document.querySelector('.venmo-amount');
+  const venmoTitle = document.querySelector('.venmo-title strong');
+  const iconLetter = document.querySelector('.icon-letter');
 
-  venmoMessage.addEventListener('click', function() {
-    venmoMessage.contentEditable = 'true';
-    venmoMessage.focus();
-  });
 
-  venmoAmount.addEventListener('click', function() {
-    venmoAmount.contentEditable = 'true';
-    venmoAmount.focus();
+  // Set the icon letter to the first letter of the venmo title
+  if (venmoTitle && iconLetter) {
+    iconLetter.textContent = venmoTitle.textContent.charAt(0);
+  }
+
+  // Add double-click event listener to switch between receipts
+  document.addEventListener('dblclick', function() {
+    if (venmoTitle.textContent === 'Borracho') {
+      venmoTitle.textContent = 'Globe';
+      venmoMessage.textContent = 'Globe';
+      venmoAmount.textContent = '-$20';
+    } else {
+      venmoTitle.textContent = 'Borracho';
+      venmoMessage.textContent = 'cover';
+      venmoAmount.textContent = '-$10';
+    }
+    iconLetter.textContent = venmoTitle.textContent.charAt(0);
   });
 });
-
 const key = keyGen();
 
 window.onload = function() {
