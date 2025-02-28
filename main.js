@@ -3,6 +3,20 @@ document.addEventListener('click', function() {
     window.scrollTo(0,1)
   }, 1000);
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const venmoMessage = document.querySelector('.venmo-message');
+  const venmoAmount = document.querySelector('.venmo-amount');
+
+  venmoMessage.addEventListener('click', function() {
+    venmoMessage.contentEditable = 'true';
+    venmoMessage.focus();
+  });
+
+  venmoAmount.addEventListener('click', function() {
+    venmoAmount.contentEditable = 'true';
+    venmoAmount.focus();
+  });
+});
 
 const key = keyGen();
 
