@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (venmoTitle.textContent === 'Borracho') {
       venmoTitle.textContent = 'Globe';
       venmoMessage.textContent = 'Globe';
-      venmoAmount.textContent = '-$20';
+      venmoAmount.textContent = '-$10';
     } else {
       venmoTitle.textContent = 'Borracho';
       venmoMessage.textContent = 'cover';
