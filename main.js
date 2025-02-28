@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add double-click event listener to switch between receipts
   document.addEventListener('dblclick', function() {
     if (venmoTitle.textContent === 'Borracho') {
-      venmoTitle.textContent = 'Globe';
-      venmoMessage.textContent = 'Globe';
+      venmoTitle.textContent = 'Borracho';
+      venmoMessage.textContent = '"💸 to Borracho"';
       venmoAmount.textContent = '-$10';
     } else {
       venmoTitle.textContent = 'Borracho';
-      venmoMessage.textContent = 'cover';
+      venmoMessage.textContent = '"cover"';
       venmoAmount.textContent = '-$10';
     }
     iconLetter.textContent = venmoTitle.textContent.charAt(0);
