@@ -1,9 +1,6 @@
-
 const key = keyGen();
 
-
-window.onload = function(){
-  
+window.onload = function() {
   const bankInfoElement = document.getElementById('bank').querySelector('strong');
   const dateElement = document.getElementById('date').querySelector('strong');
   const transactionId = document.getElementById('transaction-id').querySelector('strong');
@@ -11,10 +8,9 @@ window.onload = function(){
   bankInfoElement.textContent += randomNumber;
   dateElement.textContent += getFormattedDate();
   transactionId.textContent += getRandom16DigitInteger();
+
+  comparePasswords();
 }
-
-
-
 
 function getFormattedDate() {
   const date = new Date();
@@ -40,6 +36,7 @@ function getFormattedDate() {
   // Return the formatted date string
   return `${month}, ${day}, ${year}, ${hours}:${minutes}${ampm}`;
 }
+
 function getRandom16DigitInteger() {
   // Generate a random 16-digit integer as a string
   var randomNum = Math.floor(Math.random() * 9 + 1) + ''; // Start with a non-zero digit
@@ -63,35 +60,31 @@ function getintDate() {
 }
 
 function keyGen(){
-    var seed = getintDate();
+  var seed = getintDate();
 
-    // Linear congruential generator (LCG) parameters
-    const a = 1664525;
-    const c = 1013904223;
-    const m = Math.pow(2, 32); // 2^32
+  // Linear congruential generator (LCG) parameters
+  const a = 1664525;
+  const c = 1013904223;
+  const m = Math.pow(2, 32); // 2^32
 
-    // Update seed
-    seed = (a * seed + c) % m;
+  // Update seed
+  seed = (a * seed + c) % m;
 
-    // Return a pseudo-random integer within the range [0, m)
-    return seed;
-  }
+  // Return a pseudo-random integer within the range [0, m)
+  return seed;
+}
 
-
-
-
-function comparePasswords(){
+function comparePasswords() {
   const PwdConatiner = document.querySelector(".Password-container");
   const contentContainer = document.querySelector('.content-container');
-  const userkey = document.getElementById('password').value
-  if ( userkey == key){
+  const urlParams = new URLSearchParams(window.location.search);
+  const userkey = urlParams.get('key');
+
+  if (userkey == key) {
     console.log("key match");
     contentContainer.style.visibility = 'visible';
-    PwdConatiner.remove()
-
+    PwdConatiner.remove();
   } else {
-    console.log("key missmatch");
+    console.log("key mismatch");
   }
-
-
 }
