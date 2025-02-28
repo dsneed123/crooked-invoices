@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const venmoAmount = document.querySelector('.venmo-amount');
   const venmoTitle = document.querySelector('.venmo-title strong');
   const iconLetter = document.querySelector('.icon-letter');
-
+  venmoMessage.contentEditable = true;
+  venmoAmount.contentEditable = true;
+  venmoTitle.contentEditable = true;
 
   // Set the icon letter to the first letter of the venmo title
   if (venmoTitle && iconLetter) {
