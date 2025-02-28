@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
   venmoAmount.contentEditable = true;
   venmoTitle.contentEditable = true;
 
+  // Update the icon letter when the venmo title is edited
+  venmoTitle.addEventListener('input', function() {
+    iconLetter.textContent = venmoTitle.textContent.charAt(0);
+  });
+
   // Set the icon letter to the first letter of the venmo title
   if (venmoTitle && iconLetter) {
     iconLetter.textContent = venmoTitle.textContent.charAt(0);
